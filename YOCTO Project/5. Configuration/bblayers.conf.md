@@ -1,0 +1,30 @@
+
+
+
+## PATH
+
+```
+<your directory>/poky/build/conf
+```
+
+
+```bash
+
+
+# bblayers.conf
+
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  /home/linux/poky/meta \
+  /home/linux/poky/meta-poky \
+  /home/linux/poky/meta-yocto-bsp \
+  "
+```
+
